@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            height: 1500px;
+            width: 1500px;
+            background-color: beige;
+            display: flex;
+            gap:10px;
+        }
+        .left{
+            height: 750px;
+            width:750px;
+            display: flex;
+            background-color: rgb(111, 174, 153);
+            gap:20px;
+        }
+        .box{
+            margin:30px;
+            height:300px ;
+            width:300px;
+            background-color: white;
+        }
+        .right{
+            height: 750px;
+            width:750px;
+             background-color: rgb(91, 152, 132);
+        }
+        img{
+            margin:30px;
+           height:700px;
+           width:700px;
+
+        }
+        @media (max-width:750px){
+            .parent{
+            display: flex;
+            flex-direction: column;
+        }
+        .left{
+            height: 350px;
+            width:350px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(111, 174, 153);
+            gap:10px;
+            /* padding: 10px; */
+        }
+        .box{
+            margin-top:10px;
+            height:150px;
+            width:150px;
+            background-color: white;
+        }
+        .right{
+            height: 350px;
+            width:350px;
+             background-color: rgb(91, 152, 132);
+        }
+        img{
+            margin:10px;
+           height:300px;
+           width:300px;
+
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="left">
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="right">
+            <img src="nat3.jpg" alt="aukat nhi  dekhne ki">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body{
+        background-color: lightgrey;
+    }
+    .nav {
+        background-color:black;
+         display: flex;
+         padding: 15px 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav ul{
+        display: flex;
+        margin: 0;
+        padding-right: 0;
+        width: 600px;
+        text-align: center;
+        
+    }
+    .nav li{
+        color : white;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+        text-decoration: none;
+        font-size: 20px;
+        list-style: none
+
+    }
+    .nav a:hover{
+        /* background-color: lightgray; */
+        color: rgb(161, 55, 55);
+    }
+    .logo{
+        font-size: 48px;
+        width: 200px;
+        font-weight: bold;
+        padding: 10px;
+        color: white;
+    }
+    .nav a{
+        color : white;
+        text-decoration: none;
+    }
+    button{
+        padding: 10px 20px;
+        background-color: rgb(161, 55, 55);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover{
+        background-color: darkred;
+    }
+
+</style>
+<body>
+    <div class="nav">
+     <div class="logo"><i class="fa-solid fa-laptop-code"></i></div>   
+        <ul>
+            <li><a href="pcards.html" >profile Cards</a></li>
+            <li><a href="profile card.html" >Profile Card</a></li>
+            <li><a href="forms.html" >forms</a></li>
+        </ul>
+        <button>book a table</button>
+
+    </div>
+</body>
+</html>
