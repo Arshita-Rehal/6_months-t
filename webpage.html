@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeTable</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+        background-color: rgb(201, 183, 183);
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    /* box-sizing: border-box; */}
+    .nav {
+        background-color:rgb(107, 113, 126);
+         display: flex;
+         padding: 15px 20px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        height:40px;
+        width: 100px;
+        font-size:48px;
+        color:white
+        /* padding: 15px 20px; */
+        
+    }
+    .logo :hover{
+        color: rgb(199, 65, 65);
+    }
+    .nav-links{
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:50px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    a:hover{
+        color: rgb(199, 65, 65);
+    }
+    .dd{
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+         background-color:rosybrown;
+        color:white;
+    }
+    .dd:hover{
+        background-color: rgb(199, 65, 65);
+        color:black;
+    }
+    button{
+        color:white;
+        background-color: rosybrown;
+        font-size: large;
+        padding: 10px 20px;
+        border-radius: 5px; 
+        cursor: pointer;
+        border: none;
+    }
+button:hover{
+        background-color: rgb(199, 65, 65);
+    }
+    
+    h1{
+            margin-bottom: 20px;
+            font-size: 32px;
+            color: navy;
+        }
+    .tt{
+          display: flex;
+          flex-direction: row ;
+          justify-content: center;
+        align-items: center;
+          gap:20px;
+            flex-wrap: wrap;
+
+        }
+    .day{
+            background-color: white;
+            /* border: 2px solid navy; */
+            border-radius: 10px;
+            padding: 5px;
+            width: 200px;
+            box-shadow: 2px 2px 10px rgba(76, 134, 209, 0.1);
+        }
+    .header{
+            font-size: 18px;
+            font-weight: bold;
+            color:white;
+            text-align: center;
+            background-color: rgb(49, 49, 130);
+            padding: 12px;
+        }
+    .slot{
+            padding: 15px;
+            border-bottom:1px solid lightblue;
+            background-color: lightblue;
+        }
+    .break{
+            padding: 15px;
+            background-color: rgb(130, 94, 122);
+            font-style: italic;
+            color:black;
+        }
+
+    .footer{
+        background-color: rgb(107, 113, 126);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        bottom: 0;
+        width: 100%;
+        gap:50px;
+    
+    }  
+
+    .contact{
+        color: white;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    .contact:hover{
+          background-color: rgb(199, 65, 65);
+    }
+    .social a{
+        color: white;
+        font-size: 20px;
+        margin: 4px 10px;
+        text-decoration: none;
+
+        padding:5px 5px;
+       
+    }
+    .social a:hover{
+        box-shadow: 2px 2px 10px rgb(120, 56, 56);
+    }
+    .social{
+         display: flex;
+        flex-direction: column;
+        gap:20px;
+        padding:5px 5px;
+    }
+    .aboutContainer{
+        width: screen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.about{
+    border-radius: 10px;
+    background-color: lightblue;
+    color: black;
+    width: 500px;
+    border: 6px solid white;
+    height:400px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><i class="fa-slab-press fa-regular fa-clipboard"></i></div>
+         <div class="nav-links">
+            <a href="forms.html">form</a>            
+            <a href="pcards.html">Profile Cards</a>
+            <select class="dd" onchange="location = this.value;">
+                <option value="0">Select option</option>
+                <option >More</option>
+                <option value="navbar1.html">Click me</option>
+                <option value="navbar.html">Navbar2</option>
+                <option value="flexbox.html">Flexbox</option>
+             </select>   
+         </div>
+         <div class="login">
+            <button>Login</button>
+         </div> 
+    </div>
+
+    <h1 style="text-align:center;">College Timetable</h1>
+    <div class="tt">    
+        
+        <div class="day">
+            <div class="header">MONDAY</div>
+            <div class="slot">9:00 AM - 10:00 AM : Mathematics</div>
+            <div class="slot">10:15 AM - 11:15 AM : OS</div>
+            <div class="break">11:15 AM - 11:30 AM : Break</div>
+            <div class="slot">11:30 AM - 12:30 PM : ML</div>
+        </div>
+        <div class="day">
+            <div class="header">TUESDAY</div>
+            <div class="slot">9:00 AM - 10:00 AM : ML</div>
+            <div class="slot">10:15 AM - 11:15 AM : OS</div>
+            <div class="break">11:15 AM - 11:30 AM : Break</div>
+            <div class="slot">11:30 AM - 12:30 PM : Mathematics</div>
+        </div>
+        <div class="day">
+            <div class="header">WEDNESDAY</div>
+            <div class="slot">9:00 AM - 10:00 AM : Mathematics</div>
+            <div class="slot">10:15 AM - 11:15 AM : DS</div>
+            <div class="break">11:15 AM - 11:30 AM : Break</div>
+            <div class="slot">11:30 AM - 12:30 PM : OS</div>
+        </div>
+        <div class="day">            
+            <div class="header">THURSDAY</div>
+            <div class="slot">9:00 AM - 10:00 AM : ML</div>
+            <div class="slot">10:15 AM - 11:15 AM : OS</div>
+            <div class="break">11:15 AM - 11:30 AM : Break</div>
+            <div class="slot">11:30 AM - 12:30 PM : DS</div>
+        </div>
+    </div>
+    <div class="aboutContainer">
+         <div class="about">
+        <img src="img.jpg" alt="img is not found">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Accusantium ullam incidunt
+             temporibus nostrum distinctio error inventore atque corporis accusamus, 
+            perferendis velit odio illo repellat? Quis rerum neque quae incidunt magnam?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ex iure excepturi
+             quam dolores eos! Eligendi atque minima, natus nulla voluptas perferendis maxime 
+             expedita earum mollitia quae enim, autem distinctio.
+        </p>
+
+    </div>
+    </div>
+   
+    <div class="footer">
+        <div class="contact">
+            <p>address:ludhiana punjab</p>
+            <p>Phone: +91 9876543210</p>
+            <p>Email:contactus@gmail.com</p>
+        </div>
+         <div class="social">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i>facebook</a>
+            <a href="https://x.com/"><i class="fa-brands fa-twitter"></i>twitter</a>
+            <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram"></i>instagram</a>       
+    </div>
+</body>
+</html> 

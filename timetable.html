@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>college timetable</title>
+    <style>
+        *{         
+            margin:0 ;
+            padding:0 ;
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            box-sizing: border-box;
+        }
+        body{
+            padding:20px;
+            background-color: lightblue;
+        
+        }
+        h1{
+            margin-bottom: 20px;
+            font-size: 32px;
+            color: navy;
+        }
+        .tt{
+          display: flex;
+          flex-direction: row ;
+          justify-content: center;
+        align-items: center;
+          gap:20px;
+            flex-wrap: wrap;
+
+        }
+        .day{
+            background-color: white;
+            /* border: 2px solid navy; */
+            border-radius: 10px;
+            padding: 5px;
+            width: 200px;
+            box-shadow: 2px 2px 10px rgba(76, 134, 209, 0.1);
+        }
+        .header{
+            font-size: 18px;
+            font-weight: bold;
+            color:white;
+            text-align: center;
+            background-color: rgb(49, 49, 130);
+            padding: 12px;
+        }
+        .slot{
+            padding: 15px;
+            border-bottom:1px solid lightgray;
+        }
+        .break{
+            padding: 15px;
+            background-color: lightgray;
+            font-style: italic;
+            color:black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">College Timetable</h1>
+    <div class="tt">
+        <div class="day">
+            <div class="header">MONDAY</div>
+            <div class="slot">9:00 AM - 10:00 AM : Mathematics</div>
+            <div class="slot">10:15 AM - 11:15 AM : OS</div>
+            <div class="break">11:15 AM - 11:30 AM : Break</div>
+            <div class="slot">11:30 AM - 12:30 PM : ML</div>
+        </div>
+        <div class="day">
+              <div class="header">TUESDAY</div>
+            <div class="slot">9:00 AM - 10:00 AM : DS</div>
+            <div class="slot">10:15 AM - 11:15 AM : OS</div>
+            <div class="break">11:15 AM - 11:30 AM : Break</div>
+            <div class="slot">11:30 AM - 12:30 PM : Mathematics</div>
+        </div>
+        <div class="day">
+              <div class="header">WEDNESDAY</div>
+            <div class="slot">9:00 AM - 10:00 AM : Mathematics</div>
+            <div class="slot">10:15 AM - 11:15 AM : DS</div>
+            <div class="break">11:15 AM - 11:30 AM : Break</div>
+            <div class="slot">11:30 AM - 12:30 PM : OS</div>
+        </div>
+        <div class="day">
+            
+        <div class="header">THURSDAY</div>
+            <div class="slot">9:00 AM - 10:00 AM : ML</div>
+            <div class="slot">10:15 AM - 11:15 AM : OS</div>
+            <div class="break">11:15 AM - 11:30 AM : Break</div>
+            <div class="slot">11:30 AM - 12:30 PM : DS</div>
+
+        </div>
+    </div>
+</body>
+</html>
